@@ -4,19 +4,16 @@
 }
 h1{
 	text-align: center;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 .container{
 	background-color: silver;
 	border: 2px solid black;
 	padding-bottom: 10px;
 	padding-left: 10px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 10px;
-	
-
-
+	margin: 10px;
+	width: auto;
+  	height: auto;
 }
 #p1{
 	background-color: red;
@@ -49,28 +46,32 @@ h1{
 
 }
 p{  
-	clear: right;
-	
- 
+	position: relative;
+  	top: 20px;
 }
 
-@media (min-width: 1200px){
-  .col-lg-4 {
-    border: 6px solid white; 
-    float:left;
+/********** Large devices only **********/
+ @media (min-width: 992px) {
+ .col-lg-4 {
+    float: left;
+    border: 10px solid white;
+
   }
-  .col-lg-4{
+  .col-lg-4 {
     width: 33.33%;
   }
-
 }
 
-@media(min-width: 992px) and (max-width: 1199px){
-  .col-md-6{
-    border: 6px solid white;
-    float:left;
+/********** Medium devices only **********/
+@media (min-width: 767px) and (max-width: 991px) {
+ .col-md-6,.col-md-12 {
+    float: left;
+    border: 10px solid white;
   }
-  .col-md-6{
+  .col-md-6 {
     width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
   }
 }
